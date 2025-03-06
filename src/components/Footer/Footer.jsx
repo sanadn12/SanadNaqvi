@@ -18,6 +18,7 @@ const Footer = () => {
         autoPlay
         loop
         muted
+        playsInline
         className="absolute inset-0 w-full h-full object-cover z-[-1]"
       >
         <source src="/flame.mp4" type="video/mp4" />
