@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="relative flex flex-col md:flex-row items-center justify-center h-auto min-h-screen px-6 py-12 md:py-0 overflow-hidden">
+    <div className="relative mt-20 md:mt-0 flex flex-col md:flex-row items-center justify-center h-auto min-h-screen px-6 py-12 md:py-0 overflow-hidden">
       {/* Floating Thunder Effect */}
       <motion.div
         initial={{ opacity: 0, scale: 1 }}
