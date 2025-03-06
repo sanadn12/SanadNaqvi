@@ -19,7 +19,7 @@ const About = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         whileHover={{ scale: 1.05, boxShadow: "0px 0px 20px rgba(0, 255, 255, 0.5)" }}
-        className="w-full max-w-xs md:max-w-lg md:h-72 text-white text-center p-6 rounded-2xl bg-white/10 backdrop-blur-lg shadow-xl border border-cyan-400/70 transition-all 
+        className="w-full max-w-xs md:max-w-md md:h-72 text-white text-center p-6 rounded-2xl bg-white/10 backdrop-blur-lg shadow-xl border border-cyan-400/70 transition-all 
         mb-6 md:mb-0 md:mr-12 md:relative md:left-0"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-cyan-400">🎓 Education</h2>
@@ -31,6 +31,28 @@ const About = () => {
           My studies focus on <span className="text-cyan-300">Machine Learning, Deep Learning, NLP, and Big Data</span>.
         </p>
       </motion.div>
+       {/* Work Experience Section */}
+       <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        whileHover={{ scale: 1.05, boxShadow: "0px 0px 20px rgba(0, 255, 255, 0.5)" }}
+        className="w-full max-w-xs md:max-w-md text-white text-center p-6 rounded-2xl bg-white/10 backdrop-blur-lg shadow-xl border border-cyan-400/70 transition-all"
+      >
+        <h2 className="text-3xl md:text-4xl font-bold text-cyan-400">Work Experience</h2>
+        <p className="mt-2 text-md md:text-xl">
+          <span className="font-semibold text-cyan-300">Web Development Intern – Code4Bharat</span>
+        </p>
+        <p className="mt-3 text-sm md:text-xl">
+          Developed full-stack web development skills, working on multiple projects involving both frontend and backend.
+        </p>
+        <p className="mt-3 text-sm md:text-xl">
+          Gained experience in deploying applications and collaborating with cross-functional teams.
+        </p>
+        <p className="mt-3 text-sm md:text-xl">
+          Served as a <span className="font-semibold text-cyan-300">Team Leader</span> for an international project, managing timelines and coordinating tasks across team members.
+        </p>
+      </motion.div>
 
       {/* Right Section: Developer Skills */}
       <motion.div
@@ -38,8 +60,8 @@ const About = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         whileHover={{ scale: 1.05, boxShadow: "0px 0px 20px rgba(0, 255, 255, 0.5)" }}
-        className="w-full max-w-xs md:max-w-lg text-white text-center p-6 rounded-2xl bg-white/10 backdrop-blur-lg shadow-xl border border-cyan-400/70 transition-all 
-        md:relative md:right-0"
+        className="w-full mt-8 md:mt-0 md:ml-12 max-w-xs md:max-w-md text-white text-center p-6 rounded-2xl bg-white/10 backdrop-blur-lg shadow-xl border border-cyan-400/70 transition-all 
+        md:relative md:right-0 mb-6 md:mb-0"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-cyan-400">💻 Full Stack Developer</h2>
         <p className="mt-2 text-md md:text-lg">
@@ -55,6 +77,8 @@ const About = () => {
           Also interested in AI-powered web apps, cloud computing, and DevOps (Docker, Kubernetes, AWS).
         </p>
       </motion.div>
+
+     
     </div>
   );
 };

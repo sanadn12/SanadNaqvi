@@ -25,7 +25,7 @@ const Projects = () => {
       <div className="absolute inset-0  z-[-1]" />
       
       <h2 className="text-5xl  text-center md:text-7xl font-bold text-white mb-8 thunder-text">
-        My Work & Upcoming Projects 
+        My Personal Work & Upcoming Projects 
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
