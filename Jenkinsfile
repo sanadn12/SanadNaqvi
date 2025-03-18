@@ -15,8 +15,8 @@ pipeline {
         stage('Check Node.js Installation') {
             steps {
                 script {
-                    def nodeVersion = sh(script: 'node -v || echo "Node.js not found"', returnStdout: true).trim()
-                    if (nodeVersion.contains("not found")) {
+                    def nodeVersion = bat(script: 'node -v', returnStdout: true).trim()
+                    if (!nodeVersion.contains("v")) {
                         error "Node.js is not installed on Jenkins! Please install Node.js ${NODEJS_VERSION}."
                     } else {
                         echo "Using Node.js version: ${nodeVersion}"
@@ -27,25 +27,25 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'npm ci' // Clean install for consistency
+                bat 'npm ci' // Clean install for consistency
             }
         }
 
         stage('Run Linter') {
             steps {
-                sh 'npm run lint || echo "Lint warnings detected!"'
+                bat 'npm run lint || echo "Lint warnings detected!"'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'npm test || echo "Some tests failed!"'
+                bat 'npm test || echo "Some tests failed!"'
             }
         }
 
         stage('Build Project') {
             steps {
-                sh 'npm run build'
+                bat 'npm run build'
             }
         }
 
