@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/sanadn12/SanadNaqvi.git'
+                git branch: 'master', url: 'https://github.com/sanadn12/SanadNaqvi.git'
             }
         }
 
