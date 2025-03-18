@@ -2,11 +2,7 @@ pipeline {
     agent any
 
     environment {
-        NODEJS_VERSION = '20' // Using Node.js 20
-    }
-
-    tools {
-        nodejs 'NodeJS' // Ensure Node.js is installed via Jenkins tools
+        NODEJS_VERSION = '20'
     }
 
     stages {
@@ -16,30 +12,34 @@ pipeline {
             }
         }
 
-        stage('Set Up Node.js') {
+        stage('Check Node.js Installation') {
             steps {
                 script {
-                    def nodeVersion = sh(script: 'node -v', returnStdout: true).trim()
-                    echo "Using Node.js version: ${nodeVersion}"
+                    def nodeVersion = sh(script: 'node -v || echo "Node.js not found"', returnStdout: true).trim()
+                    if (nodeVersion.contains("not found")) {
+                        error "Node.js is not installed on Jenkins! Please install Node.js ${NODEJS_VERSION}."
+                    } else {
+                        echo "Using Node.js version: ${nodeVersion}"
+                    }
                 }
             }
         }
 
         stage('Install Dependencies') {
             steps {
-                sh 'npm ci' // `npm ci` is faster and ensures clean installs
+                sh 'npm ci' // Clean install for consistency
             }
         }
 
         stage('Run Linter') {
             steps {
-                sh 'npm run lint || echo "Linting warnings found!"'
+                sh 'npm run lint || echo "Lint warnings detected!"'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'npm test || echo "Tests failed!"' // Add a test stage
+                sh 'npm test || echo "Some tests failed!"'
             }
         }
 
