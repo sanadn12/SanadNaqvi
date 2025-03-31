@@ -11,6 +11,12 @@ const projects = [
     image: "/SeLogo.png",
   },
   {
+    title: "Smart Delivery Management System",
+    description: "A modern delivery management dashboard focusing on partner management and smart order assignments",
+    liveLink: "https://delivery-management-system-3aus.onrender.com/",
+    image: "/delivery.jpg",
+  },
+  {
     title: "Upcoming: YEET!",
     description: "A platform for college students to stay updated on club activities, events, and seminars, with video conferencing for virtual meetings and discussions.",
     liveLink: "#",
@@ -28,7 +34,7 @@ const Projects = () => {
         My Personal Work & Upcoming Projects 
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl">
         {projects.map((project, index) => (
           <motion.div
             key={index}
