@@ -1,7 +1,11 @@
 "use client"
 import React from 'react'
 import { FaReact, FaNodeJs } from "react-icons/fa";
-import { FaCss3Alt ,FaGitAlt,FaDocker ,FaLinux ,FaPython ,FaFigma ,FaJava } from "react-icons/fa";
+import { FaCss3Alt ,FaGitAlt,FaDocker ,FaLinux ,FaPython ,FaFigma ,FaJava, FaJenkins } from "react-icons/fa";
+import { SiFirebase } from "react-icons/si";
+import { DiMysql } from "react-icons/di";
+
+
 
 import { FaHtml5 } from "react-icons/fa";
 import { motion } from 'framer-motion'
@@ -10,7 +14,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { DiNginx } from "react-icons/di";
 
 
-import { SiExpress,SiMongodb  } from "react-icons/si";
+import { SiExpress,SiMongodb,SiTypescript   } from "react-icons/si";
 
 import { TbBrandNextjs, TbBrandTailwind } from "react-icons/tb";
 
@@ -22,16 +26,20 @@ const SkillsMain = () => {
             Skills
           </h2>
     
-          {/* Social Icons */}
+
           <div className="grid grid-cols-2 md:grid-cols-4  justify-center items-center gap-8 md:gap-28">
             {[
               { icon: FaReact },
               { icon: FaHtml5 },
               { icon: FaNodeJs },
+              { icon: SiTypescript },
               { icon: BiLogoPostgresql },
               { icon: SiExpress},
+              { icon: FaJenkins},
               { icon: TbBrandTailwind},
               { icon: SiMongodb },
+              { icon: SiFirebase },
+              { icon: DiMysql },
               { icon: TbBrandNextjs},
               { icon: FaCss3Alt},
               { icon: FaGitAlt },

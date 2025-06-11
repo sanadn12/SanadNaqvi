@@ -7,7 +7,7 @@ const projects = [
   {
     title: "Sawraj Enterprises",
     description: "A marketplace for trading, bidding, and auctioning scraps. Future updates will bring live auctions and real-time trading.",
-    liveLink: "https://sawraj.vercel.app",
+    liveLink: "https://www.sawraj.in",
     image: "/SeLogo.png",
   },
   {

@@ -3,13 +3,16 @@ import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt ,FaGitAlt,FaDocker ,FaLinux ,FaPython ,FaFigma ,FaJava } from "react-icons/fa";
+import { FaCss3Alt ,FaGitAlt,FaDocker ,FaLinux ,FaPython ,FaFigma ,FaJava, FaJenkins } from "react-icons/fa";
+import { SiFirebase } from "react-icons/si";
+import { DiMysql } from "react-icons/di";
+
 import { DiNginx } from "react-icons/di";
 
 
 import { BiLogoPostgresql } from "react-icons/bi";
 
-import { SiExpress,SiMongodb  } from "react-icons/si";
+import { SiExpress,SiMongodb ,SiTypescript } from "react-icons/si";
 
 import { TbBrandNextjs, TbBrandTailwind } from "react-icons/tb";
 
@@ -83,6 +86,22 @@ const Skills = () => {
             >
               <FaLinux className="text-white" size={80} />
             </motion.div>
+
+             <motion.div
+              className="mx-6"
+              animate={{ scale: [0.8, 1.2, 0.8] }}
+              transition={{ repeat: Infinity, duration: 2 }}
+            >
+              <SiFirebase className="text-white" size={80} />
+            </motion.div>
+
+             <motion.div
+              className="mx-6"
+              animate={{ scale: [0.8, 1.2, 0.8] }}
+              transition={{ repeat: Infinity, duration: 2 }}
+            >
+              <FaJenkins className="text-white" size={80} />
+            </motion.div>
           
           </Marquee>
         </div>
@@ -145,6 +164,22 @@ const Skills = () => {
               transition={{ repeat: Infinity, duration: 2 }}
             >
               <FaFigma   className="text-orange-500" size={80} />
+            </motion.div>
+
+                 <motion.div
+              className="mx-6"
+              animate={{ scale: [0.8, 1.2, 0.8] }}
+              transition={{ repeat: Infinity, duration: 2 }}
+            >
+              <SiTypescript   className="text-orange-500" size={80} />
+            </motion.div>
+
+                 <motion.div
+              className="mx-6"
+              animate={{ scale: [0.8, 1.2, 0.8] }}
+              transition={{ repeat: Infinity, duration: 2 }}
+            >
+              <DiMysql   className="text-orange-500" size={80} />
             </motion.div>
           </Marquee>
         </div>

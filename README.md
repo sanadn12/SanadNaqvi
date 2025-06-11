@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# My Portfolio
 
-First, run the development server:
+Welcome to my personal portfolio! This project showcases my work, skills, and projects in web development, design, and beyond.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+##  Project Overview
+
+This portfolio was created to:
+
+- Showcase my work and achievements
+- Provide an overview of my skills and expertise
+- Share my experience in the tech industry
+- Serve as a point of contact for professional opportunities
+
+---
+
+##  Features
+
+- **Responsive Design:** Works seamlessly on all devices
+- **Modern Tech Stack:** Built with React, Next.js, or your preferred stack
+- **Smooth Animations:** Interactive and visually appealing
+- **Project Showcase:** Highlights key projects and case studies
+- **Contact Form:** Easily get in touch
+
+---
+
+##  Licensing & Ownership
+
+> **Copyright © 2025 Sanad Naqvi**
+
+This project is licensed under the [MIT License](#mit-license).  
+However, please note that **all original content, design, and customization remain my personal property** and should not be used or modified without proper attribution and permission.
+
+---
+
+##  MIT License
+
+```
+MIT License
+
+Copyright (c) 2025 Sanad Naqvi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+##  Acknowledgements
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+I extend my appreciation to the open-source libraries, tools, and resources that made this project possible.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+##  Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+If you’d like to discuss collaboration, opportunities, or anything else, feel free to reach out:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Email:** [ni.sanad1233@gmail.com](mailto:ni.sanad1233@gmail.com)
+- **LinkedIn:** [Sanad Naqvi](https://www.linkedin.com/in/sanad-naqvi-687703256/)
+- **GitHub:** [sanadn12](https://github.com/sanadn12)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thank you for visiting my portfolio!
