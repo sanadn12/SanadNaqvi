@@ -61,10 +61,10 @@ pipeline {
             echo "Pipeline execution completed."
         }
         success {
-            echo "Build succeeded! ✅"
+            echo "Build succeeded! "
         }
         failure {
-            echo "Build failed! ❌ Check logs for errors."
+            echo "Build failed!  Check logs for errors."
         }
     }
 }
