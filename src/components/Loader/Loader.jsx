@@ -186,52 +186,7 @@ const Loader = () => {
           </div>
         </motion.div>
 
-        {/* RPM-style status text */}
-        <motion.div
-          className="text-xs sm:text-sm uppercase tracking-wider mt-6 sm:mt-8 text-blue-300/80 flex flex-wrap justify-center gap-x-3"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
-        >
-          <motion.span
-            animate={{ 
-              opacity: [0.5, 1, 0.5],
-              color: ["#93c5fd", "#3b82f6", "#93c5fd"]
-            }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity
-            }}
-          >
-            ENGINE READY
-          </motion.span>
-          <motion.span
-            animate={{ 
-              opacity: [0.5, 1, 0.5],
-              color: ["#93c5fd", "#3b82f6", "#93c5fd"]
-            }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              delay: 0.3
-            }}
-          >
-            SYSTEMS CHECK
-          </motion.span>
-          <motion.span
-            animate={{ 
-              opacity: [0.5, 1, 0.5],
-              color: ["#93c5fd", "#3b82f6", "#93c5fd"]
-            }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              delay: 0.6
-            }}
-          >
-            TURBO BOOST
-          </motion.span>
-        </motion.div>
+   
       </motion.div>
 
       {/* Exhaust effect */}
